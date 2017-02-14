@@ -85,12 +85,12 @@ class Coreg():
         """
         added = False
         if self.to_add['x1'] is not None:
-            self.L1_X = np.vstack((self.L1_X, self.to_add['x1']))
-            self.L1_y = np.vstack((self.L1_y, self.to_add['y1']))
+            self.L2_X = np.vstack((self.L2_X, self.to_add['x1']))
+            self.L2_y = np.vstack((self.L2_y, self.to_add['y1']))
             added = True
         if self.to_add['x2'] is not None:
-            self.L2_X = np.vstack((self.L2_X, self.to_add['x2']))
-            self.L2_y = np.vstack((self.L2_y, self.to_add['y2']))
+            self.L1_X = np.vstack((self.L1_X, self.to_add['x2']))
+            self.L1_y = np.vstack((self.L1_y, self.to_add['y2']))
             added = True
         return added
 
