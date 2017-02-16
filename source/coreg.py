@@ -57,10 +57,11 @@ class Coreg():
         self.U_X = self.X_unlabeled[:]
         self.U_y = self.y_unlabeled[:]
 
-    def run_trials(self, trials=10, verbose=False):
+    def run_trials(self, num_train=100, trials=10, verbose=False):
         """
         Runs multiple trials of training.
         """
+        self.num_train = num_train
         self.num_trials = trials
         self._initialize_metrics()
         self.trial = 0
