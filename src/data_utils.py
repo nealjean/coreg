@@ -8,4 +8,4 @@ def load_data(data_dir):
     """
     X = np.load(os.path.join(data_dir, 'X.npy'))
     y = np.load(os.path.join(data_dir, 'y.npy'))
-    return X, y
+    return X, y.reshape(-1, 1)

@@ -1,4 +1,4 @@
-from coreg.source import data_utils, coreg
+from coreg.src import data_utils, coreg
 import numpy as np
 import os
 import unittest
